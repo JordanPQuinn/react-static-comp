@@ -1,7 +1,7 @@
 .Banner {
   display: flex;
-  width: 70%;
-  margin: 0 auto 80px auto;
+  width: 80%;
+  margin: auto;
 }
 
 .Banner h2 {
@@ -25,6 +25,7 @@
 
 .banner-right {
   background-image: url(http://68.media.tumblr.com/bd9c40368eed9d1d994bfc716aafec48/tumblr_inline_ocdletfMwY1sse7kl_500.png);
+  background-position: center;
   background-size: cover;
   width: 50%;
 }
@@ -32,4 +33,28 @@
 .button-holder {
   display: flex;
   justify-content: flex-start;
+}
+
+@media screen and (max-width: 715px) {
+  .Banner {
+    margin: auto;
+    text-align: center;
+    height: 408px;
+  }
+  
+  .banner-left {
+    min-width: 350px;
+    width: 80%;
+    text-align: center;
+    display: block;
+  }
+
+  .banner-right {
+    min-width: 350px;
+    width: 80%;
+    position: absolute;
+    left: 50;
+    height: 350px;
+    opacity: .2;
+  }
 }

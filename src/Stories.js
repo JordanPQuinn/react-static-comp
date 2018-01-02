@@ -2,6 +2,7 @@ import React from 'react';
 import Story from './Story';
 import './Stories.css';
 
+
 const Stories = (props) => {
   return (
     <div className='Stories'>
@@ -12,10 +13,14 @@ const Stories = (props) => {
       <div className='stories-grid'>
         {
           props.stories.map( (story, index) => {
-            console.log(story);
-            // INSTEAD OF returning the div below, return a Story component
-            // Be sure to pass down the correct props!
-            return (<div>{story.title}</div>)
+            return (
+              <Story key={index}
+                     title={story.title}
+                     desc={story.desc} 
+                     img={story.img} 
+                     authName={story.authName}
+                     authImg={story.authImg}
+                     estTime={story.estTime} />)
           })
         }
       </div>

@@ -1,0 +1,40 @@
+.Story {
+  display: flex;
+  max-width: 49%;
+  min-width: 49%;
+  height: 275px;
+  border: 2px solid ghostwhite;
+  margin-top: 20px;
+}
+
+.Story img {
+  width: 175px;
+}
+
+.story-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  padding: 15px;
+}
+
+.story-info h3 {
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.story-info p {
+  font-weight: lighter;
+  line-height: 150%;
+  min-width: 160px;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 715px) {
+  .Story {
+    min-width: 70%;
+    max-width: 85%;
+  }
+}

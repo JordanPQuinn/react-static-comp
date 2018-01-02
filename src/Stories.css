@@ -1,0 +1,34 @@
+.Stories {
+  width: 70%;
+  min-width: 700px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.stories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid ghostwhite;
+}
+
+.stories-header a {
+  text-align: right;
+}
+
+.stories-grid {
+  min-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:715px) {
+  .Stories {
+    min-width: 300px;
+  }
+
+  .stories-grid {
+    min-width: 300px;
+  }
+}
